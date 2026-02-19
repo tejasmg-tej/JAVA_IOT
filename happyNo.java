@@ -6,22 +6,18 @@ public class happyNo {
         System.out.println("Enter the no:");
         n=sc.nextInt();
         int temp=n;
-        int sum=0;
         
-       
+       while(n!=1 && n!=4){
+           int sum=0;
         while(temp!=0){
             int d=temp%10;
-            int fact=1;
-            for(int i=1;i<=d;i++){
-                fact*=i;
-            }
-            sum+=fact;
+            sum+=d*d;
             temp=temp/10;
 
     }
     temp=sum;
-
-    if(temp==n){
+       }
+    if(temp==1){
         System.out.println("Strong Number");
 
     }
@@ -29,4 +25,5 @@ public class happyNo {
         System.out.println("NOT strong");
 
 }
+
 }
