@@ -18,12 +18,13 @@ public class happyNo {
     temp=sum;
        }
     if(temp==1){
-        System.out.println("Strong Number");
+        System.out.println("Happy Number");
 
     }
     else
-        System.out.println("NOT strong");
+        System.out.println("NOT Happy Number");
 
 }
 
 }
+
